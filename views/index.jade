@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1 LOGIN
+  form(action="/login" method="post")
+      div(class="item")
+        label Username
+        input(type="text" name="name")
+      div(class="item")
+        label Password:
+        input(type="password" name="password")
+      div(class="item")
+        button(type="submit") Login
+
+  h2 SIGN UP
+  form(action="/signup" method="post")
+        div(class="item")
+          label Username
+          input(type="text" name="name")
+        div(class="item")
+          label Password:
+          input(type="password" name="password")
+        div(class="item")
+          button(type="submit") Signup
+
+  p= title
+
